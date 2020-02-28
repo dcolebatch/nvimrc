@@ -1,11 +1,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important: 
-"       This requries that you install https://github.com/amix/vimrc !
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set font according to system
@@ -29,7 +22,8 @@ set guioptions-=L
 
 " Colorscheme
 set background=dark
-colorscheme peaksea
+" colorscheme peaksea
+colorscheme onedark
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -172,3 +166,8 @@ endfunc
 func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => peaksea colorscheme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+hi FoldColumn ctermfg=254 ctermbg=234 guifg=#e0e0e0 guibg=#000000

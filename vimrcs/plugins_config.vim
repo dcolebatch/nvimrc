@@ -1,19 +1,3 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important:
-"       This requires that you install https://github.com/amix/vimrc !
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-""""""""""""""""""""""""""""""
-" => Load pathogen paths
-""""""""""""""""""""""""""""""
-let s:vim_runtime = expand('<sfile>:p:h')."/.."
-call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
-call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
-call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
-call pathogen#helptags()
-
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
@@ -85,6 +69,7 @@ let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
+map <leader>ff :NERDTreeFind<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -168,3 +153,9 @@ let g:ale_lint_on_enter = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => go tests 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:gotests_bin = '/Users/venjiang/gopath/bin/gotests'
+
