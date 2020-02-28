@@ -46,11 +46,11 @@ Just run `nvim`, have fun!!! 😄
 
 Colors when editing a basic.vim:
 
-![Screenshot 1](https://github.com/venjiang/nvimrc/tree/master/screenshots/basic.png)
+![Screenshot 1](https://github.com/venjiang/nvimrc/blob/master/screenshots/basic.png?raw=true)
 
 Colors when golang development:
 
-![Screenshot 2](https://github.com/venjiang/nvimrc/tree/master/screenshots/golang.png)
+![Screenshot 2](https://github.com/venjiang/nvimrc/blob/master/screenshots/golang.png?raw=true)
 
 
 ## Included Plugins
