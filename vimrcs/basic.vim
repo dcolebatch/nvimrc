@@ -17,7 +17,7 @@ au FocusGained,BufEnter * checktime
 let mapleader = ","
 
 " Fast saving
-nmap <leader>w :w!<cr>
+nmap <leader>s :w!<cr>
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
@@ -194,8 +194,8 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
 
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+map <leader>bl :bnext<cr>
+map <leader>bh :bprevious<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
