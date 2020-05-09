@@ -8,7 +8,6 @@ my_plugins/
 my_configs.vim
 tags
 .DS_Store
-coc-settings.json
 init.vim
 plugged/
 view/
