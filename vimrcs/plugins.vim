@@ -56,6 +56,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'vim-scripts/peaksea' 
 Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'cocopon/iceberg.vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'

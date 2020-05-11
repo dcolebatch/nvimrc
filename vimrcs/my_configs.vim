@@ -105,25 +105,51 @@ noremap <leader>7  :tabn7<cr>
 noremap <leader>8  :tabn8<cr>
 noremap <leader>9  :tabn9<cr>
 " 终端
-hi Terminal ctermfg=84
+"
+" open new split panes to right and below
+" set splitright
+" set splitbelow
+" turn terminal to normal mode with escape
+tnoremap <Esc> <C-\><C-n>
+" start terminal in insert mode
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+" open terminal on ctrl+n
+function! OpenTerminal()
+  botright split term://zsh
+  resize 10
+endfunction
+nnoremap <c-n> :call OpenTerminal()<CR>
+" use alt+hjkl to move between split/vsplit panels
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <A-l> <C-\><C-n><C-w>l
+" nnoremap <A-h> <C-w>h
+" nnoremap <A-j> <C-w>j
+" nnoremap <A-k> <C-w>k
+" nnoremap <A-l> <C-w>l
+
+" hi Terminal ctermfg=84
+" noremap <silent> ;t  :terminal<cr>
 " noremap <leader>t  :botright vertical terminal<cr>
-noremap <leader>t  :terminal<cr>
-if has('nvim')
-    autocmd TermOpen term://* startinsert
-    autocmd TermEnter term://* startinsert
-    autocmd BufEnter term://* startinsert
-endif
-if has('nvim')
-    augroup terminal_setup | au!
-        autocmd TermOpen * nnoremap <buffer><LeftRelease> <LeftRelease>i
-    augroup end
-endif
+" if has('nvim')
+"     autocmd TermOpen term://* startinsert
+"     autocmd TermEnter term://* startinsert
+"     autocmd BufEnter term://* startinsert
+" endif
+" if has('nvim')
+"     augroup terminal_setup | au!
+"         autocmd TermOpen * nnoremap <buffer><LeftRelease> <LeftRelease>i
+"     augroup end
+" endif
 
 " close comfortable-motion
 let g:loaded_comfortable_motion = 0
 " insert current datetime
 iab xdate <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 
+" coc-highlighting
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => clipboard
