@@ -89,3 +89,8 @@ au BufNewFile,BufRead *.wxss set syntax=css ft=css
 au BufNewFile,BufRead *.wxml set syntax=html ft=html
 au BufNewFile,BufRead *.tmpl set syntax=html ft=html
 
+""""""""""""""""""""""""""""""
+" => HashiCorp configuration language
+""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.hcl set ft=toml
+au BufNewFile,BufRead *.nomad set ft=toml
