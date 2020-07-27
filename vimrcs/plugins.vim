@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 " common develpment
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
+Plug 'luochen1990/rainbow'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -14,6 +15,12 @@ Plug 'junegunn/gv.vim'
 Plug 'fatih/vim-go'
 Plug 'buoto/gotests-vim'
 Plug 'sebdah/vim-delve'
+" flutter development
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'udalov/kotlin-vim'
+" Plug 'natebosch/vim-lsc'
+" Plug 'natebosch/vim-lsc-dart'
+" Plug 'thosakwe/vim-flutter'
 " others development
 Plug 'mattn/emmet-vim'
 Plug 'elzr/vim-json'
@@ -51,7 +58,7 @@ Plug 'michaeljsmith/vim-indent-object'
 " tools
 Plug 'simeji/winresizer'
 Plug 'ianva/vim-youdao-translater'
-Plug 'mhinz/vim-startify'
+" Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " scheme
 Plug 'vim-scripts/peaksea' 

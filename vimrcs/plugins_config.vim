@@ -340,6 +340,38 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Flutter settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:lsc_server_commands = {'dart': 'dart_language_server'}
+" Use all the defaults (recommended):
+let g:lsc_auto_map = v:true
+let g:lsc_auto_map = {'defaults': v:true, 'GoToDefinition': 'gd'}
+
+" Apply the defaults with a few overrides:
+" let g:lsc_auto_map = {'defaults': v:true, 'FindReferences': '<leader>r'}
+
+" Setting a value to a blank string leaves that command unmapped:
+" let g:lsc_auto_map = {'defaults': v:true, 'FindImplementations': ''}
+
+" ... or set only the commands you want mapped without defaults.
+" Complete default mappings are:
+" let g:lsc_auto_map = {
+"     \ 'GoToDefinition': '<C-]>',
+"     \ 'GoToDefinitionSplit': ['<C-W>]', '<C-W><C-]>'],
+"     \ 'FindReferences': 'gr',
+"     \ 'NextReference': '<C-n>',
+"     \ 'PreviousReference': '<C-p>',
+"     \ 'FindImplementations': 'gI',
+"     \ 'FindCodeActions': 'ga',
+"     \ 'Rename': 'gR',
+"     \ 'ShowHover': v:true,
+"     \ 'DocumentSymbol': 'go',
+"     \ 'WorkspaceSymbol': 'gS',
+"     \ 'SignatureHelp': 'gm',
+"     \ 'Completion': 'completefunc',
+"     \}
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Coc extensions settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  coc-translator
@@ -359,6 +391,21 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " nmap <Leader>bj <Plug>(coc-bookmark-next)
 " nmap <Leader>bk <Plug>(coc-bookmark-prev)
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Coc Flutter settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+xmap <leader>d  <Plug>(coc-codeaction-selected)
+nmap <leader>d  <Plug>(coc-codeaction-selected)
+
+" Applying codeAction to the selected region.
+
+" Example: <leader>dap for current paragraph, <leader>dw for the current word
+
+" Then you will see action list:
+
+" Wrap with Widget
+" Wrap with Center
+" ...
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Others settings

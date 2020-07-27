@@ -88,6 +88,7 @@ au BufNewFile,BufRead *.axml set syntax=html ft=html
 au BufNewFile,BufRead *.wxss set syntax=css ft=css
 au BufNewFile,BufRead *.wxml set syntax=html ft=html
 au BufNewFile,BufRead *.tmpl set syntax=html ft=html
+au BufNewFile,BufRead *.gop set syntax=go ft=go
 
 """"""""""""""""""""""""""""""
 " => HashiCorp configuration language
