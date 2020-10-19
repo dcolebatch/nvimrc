@@ -10,5 +10,6 @@
         }
     },
     "list.source.files.defaultOptions": ["--number-select"],
-    "coc.preferences.formatOnSaveFiletypes": [ "dart" ]
+    "coc.preferences.formatOnSaveFiletypes": [ "dart" ],
+    "coc.preferences.extensionUpdateCheck": "weekly"
 }

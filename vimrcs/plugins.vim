@@ -6,11 +6,12 @@ call plug#begin('~/.vim/plugged')
 " common develpment
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
-Plug 'luochen1990/rainbow'
+Plug 'rizzatti/dash.vim'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/gv.vim'
+Plug 'machakann/vim-highlightedyank'
 " golang development
 Plug 'fatih/vim-go'
 Plug 'buoto/gotests-vim'
@@ -26,7 +27,11 @@ Plug 'mattn/emmet-vim'
 Plug 'elzr/vim-json'
 Plug 'cespare/vim-toml'
 Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown-toc'
 Plug 'fatih/vim-hclfmt'
+Plug 'uarun/vim-protobuf'
+" Plug 'ludovicchabant/vim-gutentags'
+" Plug 'skywind3000/gutentags_plus'
 " Plug 'leafgarland/typescript-vim'
 " Plug 'pangloss/vim-javascript'
 Plug 'vim-scripts/nginx.vim'
