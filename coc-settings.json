@@ -7,9 +7,27 @@
             "initializationOptions": {
                 "usePlaceholders": true
             }
+        },
+        "rust": {
+            "command": "rust-analyzer",
+            "filetypes": ["rust"],
+            "rootPatterns": ["Cargo.toml"]
         }
     },
     "list.source.files.defaultOptions": ["--number-select"],
-    "coc.preferences.formatOnSaveFiletypes": [ "dart" ],
-    "coc.preferences.extensionUpdateCheck": "weekly"
+    "coc.preferences.extensionUpdateCheck": "weekly",
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "dart",
+        "rust"
+    ],
+    "tsserver.formatOnType": true,
+    "coc.preferences.formatOnType": true,
+    "rust-analyzer.inlayHints.enable": false,
+    "rust-analyzer.hoverActions.linksInHover": true, 
+    "hover.floatMaxHeight": 20 ,
+    "hover.floatMaxWidth": 80
 }

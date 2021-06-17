@@ -222,7 +222,7 @@ vmap <C-v> <Plug>(expand_region_shrink)
 " disable vim-go :GoDef short cut (gd)
 " this is handled by LanguageClient [LC]
 let g:go_def_mapping_enabled = 1
-au BufNewFile,BufRead *.html set syntax=gohtmltmpl 
+au BufNewFile,BufRead *.tmpl set syntax=gohtmltmpl 
 " au BufNewFile,BufRead *.html set syntax=gohtmltmpl filetype=html
 let g:go_fmt_command = "goimports"
 " let g:go_fmt_command = "gopls"
@@ -406,6 +406,34 @@ nmap <leader>d  <Plug>(coc-codeaction-selected)
 " Wrap with Widget
 " Wrap with Center
 " ...
+"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Nim settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+fun! JumpToDef()
+  if exists("*GotoDefinition_" . &filetype)
+    call GotoDefinition_{&filetype}()
+  else
+    exe "norm! \<C-]>"
+  endif
+endf
+
+" Jump to tag
+nn gd :call JumpToDef()<cr>
+ino gd <esc>:call JumpToDef()<cr>i
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Rust settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 设置 hover 悬浮文档
+nnoremap <silent> <leader>h :call CocActionAsync('doHover')<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => JavaScript settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Others settings
