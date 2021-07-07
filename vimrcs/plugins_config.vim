@@ -420,8 +420,8 @@ fun! JumpToDef()
 endf
 
 " Jump to tag
-nn gd :call JumpToDef()<cr>
-ino gd <esc>:call JumpToDef()<cr>i
+" nn gd :call JumpToDef()<cr>
+" ino gd <esc>:call JumpToDef()<cr>i
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Rust settings
