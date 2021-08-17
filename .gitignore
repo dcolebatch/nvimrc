@@ -12,3 +12,4 @@ init.vim
 plugged/
 view/
 sessions/
+.netrwhist
