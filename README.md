@@ -4,6 +4,22 @@
 
 thanks for [amix/vimrc](https://github.com/amix/vimrc) .
 
+## Prerequisites
+
+[Neovim](https://neovim.io/)
+
+[Node.js](https://nodejs.org/)
+
+[Gopls](https://github.com/golang/tools/tree/master/gopls)  *Options* for Golang development
+
+Install an LSP plugin in Neovim editor [more...](https://github.com/golang/tools/blob/master/gopls/doc/vim.md)
+
+**OR**
+
+```sh
+go get golang.org/x/tools/gopls@latest
+```
+
 
 ## Installation
 ### Install Vim Plugin Manager
