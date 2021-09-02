@@ -13,7 +13,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/gv.vim'
 Plug 'machakann/vim-highlightedyank'
 " golang development
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
+" use coc-settings.json
 Plug 'buoto/gotests-vim'
 Plug 'sebdah/vim-delve'
 " javascript
