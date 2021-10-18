@@ -3,6 +3,7 @@ set -e
 
 cd ~/.vim
 
+mkdir -p ~/.config/nvim/
 echo 'set runtimepath+=~/.vim
 
 source ~/.vim/vimrcs/plugins.vim
