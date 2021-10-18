@@ -189,4 +189,5 @@ au BufNewFile,BufRead *.v,*.vh	setf vlang
 " -------------------------------------------------------------------------------------------------
 "  others settings
 " -------------------------------------------------------------------------------------------------
-
+nmap <silent> <Leader>p :NERDTreeToggle<CR>
+nmap <silent> <Leader>f :NERDTreeFind<CR>
